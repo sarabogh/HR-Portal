@@ -1,0 +1,67 @@
+.header {
+  padding: 14px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* stronger, blue-only gradient (reversed: darker -> lighter) */
+  background: linear-gradient(90deg, #4ea0ff 0%, #8ec1ff 50%, #bfe9ff 100%) !important;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(253, 192, 245, 0.301);
+  border: 1px solid rgba(252, 252, 252, 0.562);
+  z-index: 10;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 1.25rem;
+  color: #ffffff; /* darker blue for contrast on light-blue header */
+}
+
+.nav-link {
+  color: white !important;
+  margin-left: 18px;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 10px;
+  display: inline-block;
+  font-weight: 600;
+  transition: background 0.12s ease, transform 0.08s ease, color 0.12s;
+  /* force purple gradient and prevent overrides */
+  background: linear-gradient(90deg, var(--accent, #bfa3ff), var(--button-dark, #9a7bff)) !important;
+}
+
+.nav-link:hover {
+  background: linear-gradient(90deg, var(--button-dark, #9a7bff), #7f5bff) !important;
+  color: white !important;
+  transform: translateY(-2px);
+}
+
+.nav-link.active {
+  background: linear-gradient(90deg, var(--button-dark, #9a7bff), #7f5bff) !important;
+  color: white !important;
+}
+
+.nav-link:focus-visible {
+  outline: 3px solid rgba(155,123,255,0.22);
+  outline-offset: 2px;
+  color: white !important;
+}
+
+.logout-btn {
+  margin-left: 12px;
+  padding: 8px 12px;
+  background-image: linear-gradient(90deg, #ff9adf, #ff6bbf);
+  background-color: #ff87c4;
+  color: white !important;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background 0.12s ease, transform 0.08s ease;
+}
+
+.logout-btn:hover {
+  background-color: #ff4aa6; /* darker pink on hover */
+  background-image: none !important;
+  transform: translateY(-2px);
+}

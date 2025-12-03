@@ -1,0 +1,25 @@
+.policy-container {
+  padding: 20px;
+}
+
+.policy-container h2 {
+  color: #2c3e50;
+}
+
+.policy-container ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.policy-container li {
+  margin: 8px 0;
+  color: var(--muted);
+  padding: 6px 0;
+  /* removed separator line for cleaner look */
+}
+
+.policy-container h2 {
+  color: var(--text-color);
+  margin-bottom: 12px;
+}
